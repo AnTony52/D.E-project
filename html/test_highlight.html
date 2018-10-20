@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<p class="mikey">One feels a certain sympathy for Captain James Cook on the day in 1778 that he "discovered" Hawaii. Then on his third expedition to the Pacific, the British navigator had explored scores of islands across the breadth of the sea, from lush New Zealand to the lonely wastes of Easter Island. This latest voyage had taken him thousands of miles north from the Society Islands to an archipelago so remote that even the old Polynesians back on Tahiti knew nothing about it. Imagine Cook's surprise, then, when the natives of Hawaii came paddling out in their canoes and greeted him in a familiar tongue, one he had heard on virtually every mote of inhabited land he had visited. Marveling at the ubiquity of this Pacific language and culture, he later wondered in his journal: "How shall we account for this Nation spreading it self so far over this Vast ocean?"</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    // Highlight Part
+		    
+		    var selectionIcon;
+		    
+		    $('.mikey').mouseup(function(e) {
+		    	var sel = window.getSelection();
+		    	length_of_sel = Math.abs(sel.anchorOffset - sel.focusOffset);
+		    	if (!selectionIcon) {
+		    		selectionIcon = $('<button>').attr({
+		    			type: 'button',
+		    			id: 'quote-place',
+		    			class: 'btn'
+		    		})
+		    		.html('<i class="fas fa-pencil-alt"></i>')
+		    		.css({
+		    			"color": "red",
+		    			"background": "none",
+		    			"border": "none",
+		    			"position": "absolute"
+		    		});
+
+		    		$(document.body).append(selectionIcon);
+		    		selectionIcon.hide();
+		    	}
+		        else if ((selectionIcon) && (length_of_sel == 0)) { // khi icon đang hiển thị nhưng tôi muốn nó không hiển thị nữa
+		        	selectionIcon.fadeOut("slow");
+		        }
+		        if (length_of_sel != 0){
+		        	selectionIcon.css({
+		        		top: e.pageY - 30, 
+		        		left: e.pageX - 13 
+		        	}).fadeIn(500); 
+		        }
+		        $("#quote-place").click(function quote() { // khi click button
+		        	if (sel.rangeCount && sel.getRangeAt) {
+		        		range = sel.getRangeAt(0);
+		        	}
+
+		            document.designMode = "on";
+		            document.execCommand("hilitecolor", false, "yellow");
+		            document.designMode = 'off';
+		            if (selectionIcon) {
+		            	selectionIcon.fadeOut("slow");
+		            }
+
+		        });
+		    });
+		});
+
+</script>
+</body>
+</html>

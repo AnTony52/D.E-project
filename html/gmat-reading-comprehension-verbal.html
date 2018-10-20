@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reading Comprehension-GMAT-Verbal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="./../plugins/bootstrap-4.1.0/dist/css/bootstrap.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./../css/review-explanation.css">
+	<link rel="stylesheet" href="./../css/header-footer-academic-test.css">
+	<link rel="stylesheet" type="text/css" href="./../css/ielts-academic-test.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style type="text/css">
+	.bg-gray-d0d0d3{
+		background-color: #d0d0d3;
+	}
+	.nav-tabs .nav-link {
+		background-color: #c0c3d2;
+		color: #fff;
+	}
+	
+	/*Custom checkbox*/
+	/* Customize the label (the container) */
+	.check-container {
+		/*display: block;*/
+		position: relative;
+		padding-left: 30px;
+		margin-bottom: 12px;
+		/*cursor: pointer;*/
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	/* Hide the browser's default checkbox */
+	.check-container input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		height: 20px;
+		width: 20px;
+		/*background-color: #eee;*/
+		border: 1px solid #d0d0d3;
+		border-radius: 50px;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.check-container:hover input ~ .checkmark {
+		/*background-color: #fff;*/
+		border-color: #246ee9;
+	}
+
+	/* When the checkbox is checked, add a white background */
+	.check-container input:checked ~ .checkmark {
+		background-color: #fff;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.check-container input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.check-container .checkmark:after {
+	    left: 2px;
+	    top: 2px;
+	    width: 14px;
+	    height: 14px;
+	    border-radius: 50%;
+	    background: #246ee9;
+	    border: solid #246ee9;
+	    border-width: 3px;
+		/*border: solid black;*/
+		/*border-width: 0 3px 3px 0;*/
+		/*-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);*/
+	}
+	/*end Custom checkbox*/
+	.answers-hover:hover {
+		border-radius: 4px;
+		background-color: #eef4fc;
+	}
+</style>
+
+</head>
+<body>
+	<!-- header -->
+	<div class="header row" id="header">
+		<div class="col-md-3">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="logo">
+						<img src="./../img/Logo.png" width="100px">
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-light float-right">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active mx-3">
+							<a class="nav-link" href="#" onclick="changeTextSize()"><img src="./../img/Untitled-1_14.png">Text size</a>
+						</li>
+						<li class="nav-item mx-3">
+							<a class="nav-link" href="#"><img src="./../img/Untitled-1_06.png">Exit test</a>
+						</li>
+						<li class="right-wall nav-item border-right"></li>
+						<li class="nav-item mx-3">
+							<a class="nav-link" href="#"><img src="./../img/Untitled-1_11.png">Review</a>
+						</li>
+						<li class="nav-item mx-3">
+							<button class="button-submit btn btn-primary text-white">Submit</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<!-- end header -->
+	<div class="Listening-Reading-bar" id="listening-reading-bar" style="margin-top: 64px;width: 100%;background-color: #242d65;">
+		<ul class="py-3 text-center text-white m-0">
+			<li class="d-inline-block px-5" style="color: #d0d0d3;">VERBAL</li>
+			<li class="d-inline-block px-5" style="color: #d0d0d3;">QUANTITIVE</li>
+			<li class="d-inline-block px-5">INTEGRATED REASONING</li>
+		</ul>
+	</div>
+	
+	<div class="main-content container body-content" id="main-content" style="">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 pr-0 bg-pale-blue">
+				<div class="window bg-pale-blue px-5 pt-5">
+					<h1 class="Questions my-4 " style="font-size: 20px;">Questions 1—4 refer to the following passage. </h1>
+					<p>For many years, there has been much hand-wringing over the fate of Social Security once the baby boomers reach retirement age. Baby boomers, people born between 1946 and 1964, represent the largest single sustained growth of population in the history of the United States. It is the sheer enormity of this generation that has had economists worried as retirement beckons. According to the U.S. Census Bureau, by 2020, an estimated 80,000,000 Americans will have reached or surpassed the conventional age of retirement. With so many boomers retiring and drawing benefits but no longer paying into Social Security, many fear that the Social Security fund itself could go bankrupt. </p>
+
+					<p>However, a study released by the American Association for Retired Persons (AARP) that examined baby boomers’ plans for retirement found that for the most part, this generation is not expected to adhere to the conventional retirement scheme, a fact that may please the worriers in Washington, DC.</p> 
+
+					<p>In its survey, the AARP broke baby boomers into different categories based on their financial standing, degree of preparedness for retirement, and optimism toward the future. The AARP found that of all groups surveyed, only 13% planned to stop working altogether once they reached retirement age; the remaining 87% planned to continue working for pay. The reasons to continue working varied among the different groups. For some, the plan to continue working is a financial decision. Between 25% and 44% of respondents reported they are not financially prepared to retire and will therefore continue working past retirement age. For the remainder of those planning to work past their mid to late 60s, the decision is based on long-held goals to start a business and/or the desire to stay active in their industry or community. </p>
+
+					<p>Eventually, most baby boomers will need to stop working as they progress into their 70s, 80s, and beyond. But with such large numbers planning to continue working, thereby continuing to pay into the Social Security fund, perhaps Social Security will be able to withstand the end of the baby boom and continue to be a safety net for future generations.</p>
+					<div class="m-5"></div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 pl-0" style="border-left: solid #d0d0d3 6px;">
+				<div class="window px-5 pt-5">
+
+					<h1 class="Questions my-4 font-weight-bold">QUESTION 1</h1>
+					<p class="my-4 font-weight-bold" style="font-size: 24px;">Which of the following titles would be most appropriate for this passage? </p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">A</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">The AARP and Social Security </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">B</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">Baby Boomers Bankrupt Social Security  </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">C</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">Baby Boomers Will Work for Pay Beyond Retirement  </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">D</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">Worries about Social Security May Be Unfounded  </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">E</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">Economists Fear Baby Boomers’ Impact on Social Security </span></p>
+					<!--  -->
+					<h1 class="Questions mb-4 mt-5 font-weight-bold">QUESTION 2</h1>
+					<p class="my-4 font-weight-bold" style="font-size: 24px;">According to the author, baby boomers are not likely to bankrupt the Social Security fund primarily because  </p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">A</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">the government has raised the official age for retirement.  </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">B</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">most baby boomers are financially prepared for retirement.   </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">C</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">most baby boomers plan to work past retirement age.   </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">D</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">most baby boomers are active in their communities.   </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">E</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">most baby boomers will not need supplemental income.  </span></p>
+					<!--  -->
+					<h1 class="Questions mb-4 mt-5 font-weight-bold">QUESTION 3</h1>
+					<p class="my-4 font-weight-bold" style="font-size: 24px;">The author cites statistics from the AARP survey primarily to  </p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">A</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">support the assertion that baby boomers are the largest group of retirees in U.S. history.  </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">B</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">show that baby boomers will not retire en masse as feared.   </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">C</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">show that baby boomers will not retire en masse as feared.   </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">D</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">show how optimistic baby boomers are about their future.   </span></p>
+					<p class="answers-hover"><label class="myOption text-center border font-weight-bold letter-circle bg-gray-d0d0d3 mr-2">E</label><label class="check-container d-inline" ><input type="checkbox" ><span class="checkmark"></span></label><span class="text-resizeable-16px">show the correlation between retirement age and optimism.  </span></p>
+					<div class="m-5"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end main-content -->
+	<!-- footer -->
+	<div class = "footer p-0 pt-3" style="position: fixed;bottom: 0;height: 100px;">
+		<div class="container-fluid row" style="height: 96px;">
+			<div class="col-sm-2">
+				<div style="position: absolute; margin-left: 0; left: 40px">
+					<div class="dash" style="background: #242d65; opacity: 1;"></div>
+					<span style="color: rgb(65, 63, 151)">Time left</span>
+				</div>
+				<div class="timer">
+					<span>40 : 00</span>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<div class="row">
+					<div class="col-12 questions">
+						<button><span>1</span></button>
+						<button><span>2</span></button>
+						<button><span>3</span></button>
+						<button><span>4</span></button>
+						<button><span>5</span></button>
+						<button><span>6</span></button>
+						<button><span>7</span></button>
+						<button><span>8</span></button>
+						<button><span>9</span></button>
+						<button><span>10</span></button>
+					</div>
+					<div class="w-100"></div>
+					<div class="col-12 questions">
+						<button><span>11</span></button>
+						<button><span>12</span></button>
+						<button><span>13</span></button>
+						<button><span>14</span></button>
+						<button><span>15</span></button>
+						<button><span>16</span></button>
+						<button><span>17</span></button>
+						<button><span>18</span></button>
+						<button><span>19</span></button>
+						<button><span>20</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<button class="d-inline-block btn border py-2 my-2 mr-1 " style="width: 200px;">Previous Question</button>
+				<a href="gmat-two-part-analysis-integrated-reasoning.html">
+					<button class="d-inline-block btn border py-2 my-2 mr-5 ml-1 " style="width: 200px;">Skip this question</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+	<script type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./../plugins/bootstrap-4.1.0/dist/js/bootstrap.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+	<script type="text/javascript" src="./../js/sweetalert2.all.js"></script>
+	<script type="text/javascript" src="./../js/ielts-academic-test.js"></script>
+	<script type="text/javascript" src="./../js/change-options-color.js"></script>
+	<script type="text/javascript">
+            $(document).ready(function(){
+                var $header = $('.header');
+                var $footer = $('.footer');
+                var $listening_reading_bar = $('.Listening-Reading-bar');
+                var $ex3 = $('.window');
+                console.log($header+' '+$footer+' '+$listening_reading_bar)
+                var $window = $(window).on('resize', function(){
+                    var height = $(this).height() - $header.height() - $footer.height() - $listening_reading_bar.height() - ($footer.height()-5);
+                    console.log(height);
+                    $ex3.height(height);
+        }).trigger('resize'); //on page load
+            });
+        </script>
+</body>
+</html>
