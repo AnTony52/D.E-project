@@ -1,0 +1,328 @@
+.header {
+  max-width: 100%;
+}
+.main-content {
+  max-width: 100%;
+}
+.line-height {
+  line-height: 30px;
+}
+.icon-dolenglish {
+  width: 100px;
+}
+.icon-image {
+  height: 1.1rem;
+}
+
+.text-dark-blue {
+  color: #242d65 !important;
+}
+.next-btn {
+  width: 200px;
+  height: 56px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px 0 rgba(27, 39, 51, 0.08);
+  margin-bottom: 100px;
+}
+.next {
+  text-decoration: none;
+  font-size: 16px;
+  color: #242d65;
+}
+.window {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  overflow: auto;
+}
+.listening-part {
+  height: 340px;
+}
+.Listening-Reading {
+  height: 64px;
+  background-color: #242d65;
+  color: #fff;
+  padding-top: 15px;
+}  
+.Reading {
+  margin-right: 195px;
+}
+.Listening {
+  margin-left: 195px;
+  color: #6b7197;
+}
+.Section-1-Question-1 {
+  height: 31px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #242d65;
+}
+.Questions-1-7 {
+  width: 250px;
+  height: 17px;
+  font-family: SFProText;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.64;
+  letter-spacing: 0.7px;
+  color: #242d65;
+}
+.Voyage-of-Going-beyond-the-blue-line-2 {
+  width: 100%;
+  font-family: SFProDisplay;
+  font-size: 32px;
+  font-weight: bold;
+  color: #242d65;
+}
+.Reading-Passage-1 {
+  height: 31px;
+  font-family: SFProDisplay;
+  font-size: 24px;
+  font-weight: bold;
+  color: #242d65;
+  color: var(--dark-slate-blue);
+}
+.Questions {
+  height: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #242d65;
+}
+.True-False-Not-given {
+  height: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Voyage-of-Going-image {
+  width: 100%;
+  height: auto;
+  border: solid 4px #eeebe9;
+}
+.reading-part {
+  background-color: #d0d0d3;
+  padding: 5px 10px;
+}
+.border-circle{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.letter-circle{
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 50%;
+}
+.label-number-centered {
+  box-sizing: border-box;
+  padding-top: 3px;
+}
+.padding-2-sides {
+  padding: 0 20px;
+}
+.circled-padding {
+  padding: 4px 10px;
+}
+.circle{
+	margin: 1rem 0;
+}
+
+/*SCROLLBAR*/
+.main-content ::-webkit-scrollbar {
+    width: 10px;
+}
+
+.main-content ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.main-content ::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+.main-content ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*END SCROLLBAR*/
+
+
+.bg-pale-blue {
+  background-color: #eef4fc !important;
+}
+.bg-blue-00abe3 {
+  background-color: #00abe3;
+}
+/*inputs words*/
+.word-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #c8ced3;
+}
+/*check box no label*/
+    .control {
+    font-size: 18px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    }
+
+    .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    }
+
+    .control__indicator {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d0d0d3;
+    }
+
+    .control--radio .control__indicator {
+    border-radius: 50%;
+    }
+
+    .control:hover input ~ .control__indicator,
+    .control input:focus ~ .control__indicator {
+    /*background: #ccc;*/
+    }
+
+    .control input:checked ~ .control__indicator {
+    background: #246ee9;
+    }
+
+    .control:hover input:not([disabled]):checked ~ .control__indicator,
+    .control input:checked:focus ~ .control__indicator {
+    background: #246ee9;
+    }
+
+    .control input:disabled ~ .control__indicator {
+    pointer-events: none;
+    opacity: .6;
+    /*background: #e6e6e6;*/
+    }
+
+    .control__indicator:after {
+    /*position: absolute;*/
+    margin-left: 12px;
+    margin-top: 5px;
+    display: none;
+    content: '';
+    }
+
+    .control input:checked ~ .control__indicator:after {
+    display: block;
+    }
+
+    .control--checkbox .control__indicator:after {
+    /*top: 5px;*/
+    /*left: 15px;*/
+    top: 10px;
+    left: 18px;
+    width: 6px;
+    height: 17px;
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    }
+    /* end check box no label*/
+/*audio play bar*/
+  /*for Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #myRange {
+      overflow: hidden;
+      width: 600px;
+      width: 50%;
+      -webkit-appearance: none;
+      background-color: #d0d0d4;
+      cursor: pointer;
+      border-radius: 4px;
+      outline: none;
+    }
+    
+    #myRange::-webkit-slider-runnable-track {
+      height: 5px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+    
+    #myRange::-webkit-slider-thumb {
+      width: 1px;
+      -webkit-appearance: none;
+      height: 5px;
+      cursor: pointer;
+      /*background: #434343;*/
+      background-color: #43e5f7; 
+      box-shadow: -600px 0 0 600px #43e5f7;
+    }
+
+}
+/** FF*/
+#myRange::-moz-range-progress {
+  background-color: #43e5f7; 
+}
+#myRange::-moz-range-track {  
+  background-color: #d0d0d4;
+}
+/* IE*/
+#myRange::-ms-fill-lower {
+  background-color: #43e5f7; 
+}
+/*volume*/
+/* for Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #volumeRange {
+      overflow: hidden;
+      width: 7%;
+      -webkit-appearance: none;
+      background-color: #d0d0d4;
+      cursor: pointer;
+      border-radius: 2px;
+      outline: none;
+    }
+    
+    #volumeRange::-webkit-slider-runnable-track {
+      height: 5px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+    
+    #volumeRange::-webkit-slider-thumb {
+      width: 1px;
+      -webkit-appearance: none;
+      height: 5px;
+      cursor: pointer;
+      background-color: #43e5f7; 
+      box-shadow: -100px 0 0 100px #43e5f7;
+    }
+
+}
+/** FF*/
+#volumeRange::-moz-range-progress {
+  background-color: #43e5f7; 
+}
+#volumeRange::-moz-range-track {  
+  background-color: #d0d0d4;
+}
+/* IE*/
+#volumeRange::-ms-fill-lower {
+  background-color: #43e5f7; 
+}
+
+/*img*/
+ .nav-link img {
+      width: 20px;
+    }
+/*highlight*/
+#quote-place { 
+      position:absolute;
+    }
