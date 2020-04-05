@@ -1,9 +1,3 @@
-*{
-  cursor: context-menu;
-}
-button {
-  outline: none;
-}
 .main-content {
   max-width: 100%;
 }
@@ -16,7 +10,7 @@ button {
 
 .header {
   overflow: hidden;
-  background-color: #fff;
+  /*background-color: #f1f1f1;*/
   padding: 10px 10px;
   width: 100%;
   height: 64px;
@@ -54,7 +48,7 @@ button {
 
 .caption{
 	padding-right: 8rem;
-  /*padding-top: 1rem;*/
+  padding-top: 1rem;
   font-size: 20px;
 }
 
@@ -72,7 +66,7 @@ button {
 .colum1{
 	/*background-color: #eef4fc;*/
   background-color: #f8f9fd;
-  padding-right: 0;
+	padding-right: 0;
 }
 
 .colum1 .ex3{
@@ -103,19 +97,19 @@ div.ex3 {
 }
 /*MENU SCROLLBAR*/
 .scrolling ::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 .scrolling ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+    background: #f1f1f1; 
 }
 
 .scrolling ::-webkit-scrollbar-thumb {
-  background: #888; 
+    background: #888; 
 }
 
 .scrolling ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+    background: #555; 
 }
 /*END MENU SCROLLBAR*/
 
@@ -144,34 +138,34 @@ div.ex3 {
   width: 6rem;
 }
 
-button{
+ button{
   background-color: #fff;
   border: solid #d0d0d3 1px;
 }
 
 .answers button{
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 /*ANSWERS ICONS*/
 .listen-icon{
-  color: #00abe3;
-  padding-left: 5px;
+    color: #00abe3;
+    padding-left: 5px;
 }
 
 .locate-icon{
-  color: #00abe3;
-  padding: 0 5px;
+    color: #00abe3;
+    padding: 0 5px;
 }
 
 .explain-icon{
-  color: #00abe3;
-  padding: 0 5px;
+    color: #00abe3;
+    padding: 0 5px;
 }
 
 .report-icon{
-  color: #f5a41b;
-  padding: 0 5px;
+    color: #f5a41b;
+    padding: 0 5px;
 }
 
 .listening{
@@ -191,9 +185,9 @@ button{
 }
 
 .table th, .table td {
-  padding: 0.75rem;
-  vertical-align: top;
-  padding-left: 1rem;
+    padding: 0.75rem;
+    vertical-align: top;
+    padding-left: 1rem;
 }
 
 .whitespace {
@@ -202,35 +196,4 @@ button{
 
 .line-through{
   text-decoration: line-through;
-}
-
-.bg-gray-d0d0d3{
-  background-color: #d0d0d3;
-}
-
-.bg-green-22bb3e{
-  color: #fff;
-  background-color: #22bb3e;
-}
-
-.bg-red-ee3c27{
-  color: #fff;
-  background-color: #ee3c27;
-}
-
-
-.audio-btn {
-  outline: none;
-  cursor: pointer;
-}
-.audio-btn img{
-  cursor: pointer;
-}
-.audio-btn:hover{
-  filter: brightness(80%);
-  border-radius: 50px;
-}
-.audio-btn:active{
-  filter: saturate(8);
-
 }
