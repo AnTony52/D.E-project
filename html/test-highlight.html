@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>select demo</title>
+  <style>
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ <p id="p1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ <p id="p2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+ <input type='text' id='input' />
+
+<div id="div"></div>
+<script>
+var t = '';
+function getText( obj ) {
+        return obj.textContent ? obj.textContent : obj.innerText;
+    }
+String.prototype.splice = function(idx, rem, str) {
+      return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+    };
+function gText() {
+    
+    t = (document.all) ? document.selection.createRange().text : document.getSelection();
+    var length_of_t = 0;
+
+    length_of_t = Math.abs( t.anchorOffset - t.focusOffset);
+    // console.log(length_of_t);
+    
+    var paragraph = document.getElementById("p1"); //phan nay lay id de test-highlight-4 lo
+    var paragraph_get_text = getText(paragraph);
+    var result = paragraph_get_text.splice(Math.max(t.anchorOffset, t.focusOffset), 0, "<button>icon</button>");
+
+    if (length_of_t != 0) {//neu co content trong selection thi
+
+      document.getElementById('input').value = t;
+      // t_with_button = t + "<button>icon</button>";
+      // document.getElementById("p2").innerHTML = t_with_button;
+      document.getElementById("p1").innerHTML = result; 
+    }
+    else{//neu khong co content trong selection
+      document.getElementById('input').value = ' ';
+      document.getElementById("p2").innerHTML = paragraph.innerHTML;
+    }
+    
+
+    
+}
+
+document.onmouseup = gText;
+if (!document.all) document.captureEvents(Event.MOUSEUP);
+</script>
+ 
+</body>
+</html>
+
