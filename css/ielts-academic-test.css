@@ -28,6 +28,7 @@
 }
 .next {
   text-decoration: none;
+  /*font-family: SFProText;*/
   font-size: 16px;
   color: #242d65;
 }
@@ -55,6 +56,7 @@
 }
 .Section-1-Question-1 {
   height: 31px;
+  /*font-family: SFProDisplay;*/
   font-size: 24px;
   font-weight: bold;
   color: #242d65;
@@ -65,6 +67,8 @@
   font-family: SFProText;
   font-size: 13px;
   font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 1.64;
   letter-spacing: 0.7px;
   color: #242d65;
@@ -86,15 +90,23 @@
 }
 .Questions {
   height: 16px;
+  /*font-family: SFProText;*/
   font-size: 14px;
   font-weight: 600;
   line-height: 1.41;
   color: #242d65;
 }
 .True-False-Not-given {
+  /*width: 68px;*/
   height: 16px;
+  /*font-family: SFProText;*/
   font-size: 14px;
   font-weight: 600;
+  /*font-style: normal;*/
+  /*font-stretch: normal;*/
+  /*line-height: 1.41;*/
+  /*letter-spacing: normal;*/
+  /*color: #1b2733;*/
 }
 
 .Voyage-of-Going-image {
@@ -122,7 +134,7 @@
   padding-top: 3px;
 }
 .padding-2-sides {
-  padding: 0 20px;
+  padding: 0 85px;
 }
 .circled-padding {
   padding: 4px 10px;
@@ -133,7 +145,7 @@
 
 /*SCROLLBAR*/
 .main-content ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 .main-content ::-webkit-scrollbar-track {
@@ -163,11 +175,16 @@
   background: transparent;
   border-bottom: 1px solid #c8ced3;
 }
+/*td {
+  vertical-align: middle;
+}*/
 /*check box no label*/
     .control {
     font-size: 18px;
     position: relative;
     display: block;
+    /*margin-bottom: 15px;*/
+    /*padding-left: 30px;*/
     cursor: pointer;
     }
 
@@ -180,9 +197,14 @@
     }
 
     .control__indicator {
+    /*position: absolute;*/
+    /*top: 2px;*/
+    /*left: -13px;*/
     width: 32px;
     height: 32px;
+    /*background: #e6e6e6;*/
     border: 1px solid #d0d0d3;
+    /*margin: 0 40%;*/
     }
 
     .control--radio .control__indicator {
@@ -195,12 +217,12 @@
     }
 
     .control input:checked ~ .control__indicator {
-    background: #246ee9;
+    /*background: #00abe3;*/
     }
 
     .control:hover input:not([disabled]):checked ~ .control__indicator,
     .control input:checked:focus ~ .control__indicator {
-    background: #246ee9;
+    /*background: #00abe3;*/
     }
 
     .control input:disabled ~ .control__indicator {
@@ -229,22 +251,18 @@
     width: 6px;
     height: 17px;
     transform: rotate(45deg);
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
+    border: solid black;
+    border-width: 0 2px 2px 0;
     }
     /* end check box no label*/
-/*audio play bar*/
+  /*play bar*/
   /*for Chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     #myRange {
       overflow: hidden;
       width: 600px;
-      width: 50%;
       -webkit-appearance: none;
       background-color: #d0d0d4;
-      cursor: pointer;
-      border-radius: 4px;
-      outline: none;
     }
     
     #myRange::-webkit-slider-runnable-track {
@@ -281,12 +299,9 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     #volumeRange {
       overflow: hidden;
-      width: 7%;
+      width: 100px;
       -webkit-appearance: none;
       background-color: #d0d0d4;
-      cursor: pointer;
-      border-radius: 2px;
-      outline: none;
     }
     
     #volumeRange::-webkit-slider-runnable-track {
@@ -301,6 +316,7 @@
       -webkit-appearance: none;
       height: 5px;
       cursor: pointer;
+      /*background: #434343;*/
       background-color: #43e5f7; 
       box-shadow: -100px 0 0 100px #43e5f7;
     }
